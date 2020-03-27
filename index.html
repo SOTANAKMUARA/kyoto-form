@@ -6,20 +6,49 @@
 </head>
 <body>
 ※数字や文字は半角でお願いします。
-<form name="contact" method="POST" netlify>
-  <p>氏名　例:山田 太郎</p>
-  <input type="text" name="氏名">
+<form name="contact" method="POST" enctype="multipart/form-data" netlify>
+  <p>・お名前</p>
+  <p>・姓</p>
+  <input type="text" name="姓" placeholder="山田" required>
+  <p>・名</p>
+  <input type="text" name="名" placeholder="太郎" required>  
 
-  <p>フリガナ　※姓と名の間は半角でスペース　例:ヤマダ タロウ</p>
-  <input type="text" name="ふりがな">
+  <p>・生年月日　例:1993年11月30日の場合→1993.11.30</p>
+  <input type="text" name="生年月日" placeholder="1993.11.30" required>
 
-  <p>ローマ字　※名から先に記述　例:Taro Yamada</p>
-  <input type="text" name="ふりがな">
+  <p>・フリガナ</p>
+  <p>・セイ</p>
+  <input type="text" name="セイ" placeholder="ヤマダ" required>
+  <p>・メイ</p>
+  <input type="text" name="セイ" placeholder="タロウ" required>
 
-  <p>学校名</p>
+  <p>・ローマ字</p>
+  <p>・Last Name</p>
+  <input type="text" name="Last Name" placeholder="Yamada" required>
+  <p>・First Name</p>
+  <input type="text" name="First Name" placeholder="Taro" required>
+
+  <div>
+    <label for="i_image">・参考画像の添付</label>
+    <input id="i_image" type="file" name="sample_pic">
+  </div>
+  <div>
+
+  <!--
+  <p>性別　</p>
+  <input type="radio" name="性別" value="M">男
+  <input type="radio" name="性別" value="F">女 -->
+
+
+  <p>・学校名</p>
   <input type="radio" name="学校名" value="SPN">SPN
   <input type="radio" name="学校名" value="USA">USA
   <input type="radio" name="学校名" value="ITA">ITA
+  <input type="radio" name="学校名" value="CZE">CZE
+  <input type="radio" name="学校名" value="FIN">FIN
+  <input type="radio" name="学校名" value="HUN">HUN
+  <input type="radio" name="学校名" value="POL">POL
+  <input type="radio" name="学校名" value="UK">UK
   <input type="radio" name="学校名" value="CZE">CZE
   <input type="radio" name="学校名" value="FRA">FRA
   <input type="radio" name="学校名" value="GER">GER
@@ -31,6 +60,7 @@
   <input type="radio" name="学校名" value="相愛">相愛
   <input type="radio" name="学校名" value="桐朋">桐朋
   <input type="radio" name="学校名" value="大音">大音
+  <input type="radio" name="学校名" value="東音">東音
   <input type="radio" name="学校名" value="東芸">東芸
   <input type="radio" name="学校名" value="愛知">愛知
   <input type="radio" name="学校名" value="エリザ">エリザ
@@ -40,7 +70,7 @@
   <input type="radio" name="学校名" value="京芸">京芸
   <input type="radio" name="学校名" value="同志社">同志社
 
-  <p>楽器名</p>
+  <p>・楽器名</p>
   <input type="radio" name="楽器名" value="ヴァイオリン">ヴァイオリン
   <input type="radio" name="楽器名" value="ヴィオラ">ヴィオラ
   <input type="radio" name="楽器名" value="チェロ">チェロ
@@ -49,6 +79,7 @@
   <input type="radio" name="楽器名" value="オーボエ">オーボエ
   <input type="radio" name="楽器名" value="クラリネット">クラリネット
   <input type="radio" name="楽器名" value="ファゴット">ファゴット
+  <input type="radio" name="楽器名" value="サックス">サックス
   <input type="radio" name="楽器名" value="ホルン">ホルン
   <input type="radio" name="楽器名" value="トランペット">トランペット
   <input type="radio" name="楽器名" value="トロンボーン">トロンボーン
@@ -58,33 +89,39 @@
   <input type="radio" name="楽器名" value="ハープ">ハープ
   <input type="radio" name="楽器名" value="ピアノ">ピアノ
   <input type="radio" name="楽器名" value="ソプラノ（ソロ）">ソプラノ（ソロ）
+  <input type="radio" name="楽器名" value="メゾソプラノ（ソロ）">メゾソプラノ（ソロ）
+  <input type="radio" name="楽器名" value="アルト">アルト
+  <input type="radio" name="楽器名" value="テノール（ソロ）">テノール（ソロ）
   <input type="radio" name="楽器名" value="バリトン（ソロ）">バリトン（ソロ）
   <input type="radio" name="楽器名" value="作曲">作曲
   <input type="radio" name="楽器名" value="合唱（ソプラノ）">合唱（ソプラノ）
   <input type="radio" name="楽器名" value="合唱（アルト）">合唱（アルト）
+  <input type="radio" name="楽器名" value="合唱（テノール）">合唱（テノール）
+  <input type="radio" name="楽器名" value="合唱（バス）">合唱（バス）
   <input type="radio" name="楽器名" value="合唱（ピアノ）">合唱（ピアノ）
   <input type="radio" name="楽器名" value="指揮者">指揮者
 
-  <p>生年月日　例:1993年11月30日の場合→1993/11/30</p>
-  <input type="text" name="生年月日">
 
-  <p>性別　</p>
-  <input type="radio" name="性別" value="M">男
-  <input type="radio" name="性別" value="F">女
 
-  <p>郵便番号　例:000-0000</p>
+
+
+  <p>・郵便番号　例:000-0000</p>
   <input type="text" name="郵便番号">
 
-  <p>自宅住所</p>
+  <p>・自宅住所</p>
   <input type="text" name="自宅住所">
 
-  <p>電話番号　例:000-0000-0000</p>
-  <input type="text" name="電話番号">
+  <p>・電話番号　例:000-0000-0000</p>
+  <input type="text" name="電話番号" placeholder="000-0000-0000" required>
 
+  <p>・e-mail (期間中確認が可能なもの)　</p>
+  <input type="text" name="e-mail" placeholder="000000000@gmail.com" required>
+
+  <!--
   <p>銀行名</p>
   <input type="text" name="銀行名">
 
-  <p>支店番号</p>
+  <p>支店名</p>
   <input type="text" name="支店番号">
 
   <p>口座</p>
@@ -96,6 +133,18 @@
 
   <p>名義(カタカナ)</p>
   <input type="text" name="名義(カタカナ)">
+-->
+
+　<p>以下、質問にお答えください</p>
+
+  
+  <p>・過去にこのフェスティバルに参加したことはありますか？</p>
+  <input type="radio" name="Q1" value="はい">はい
+  <input type="radio" name="Q1" value="いいえ">いいえ
+
+  <p>・フェスティバル開催時(2021年5月)に在学していますか？</p>
+  <input type="radio" name="Q2" value="はい">はい
+  <input type="radio" name="Q2" value="いいえ">いいえ
 
   <p>
     <button type="submit">送信</button>
