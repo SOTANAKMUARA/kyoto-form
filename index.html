@@ -7,29 +7,37 @@
 <body>
 ※数字や文字は半角でお願いします。
 <form name="contact" method="POST" enctype="multipart/form-data" netlify>
-  <p>・お名前</p>
+  
+  <div class="form">
   <p>・姓</p>
   <input type="text" name="姓" placeholder="山田" required>
   <p>・名</p>
   <input type="text" name="名" placeholder="太郎" required>  
+  </div>
 
-  <p>・生年月日　例:1993年11月30日の場合→1993.11.30</p>
-  <input type="text" name="生年月日" placeholder="1993.11.30" required>
+  <div class="form">
+  <p>・生年月日　例:1993年11月30日の場合→1993.04.05</p>
+  <input type="text" name="生年月日" placeholder="1993.04.05" required>
+  </div>
 
-  <p>・フリガナ</p>
+  <div class="form">
   <p>・セイ</p>
   <input type="text" name="セイ" placeholder="ヤマダ" required>
   <p>・メイ</p>
   <input type="text" name="メイ" placeholder="タロウ" required>
+  </div>
 
-  <p>・ローマ字</p>
+
+  <div class="form">
   <p>・Last Name</p>
   <input type="text" name="Last Name" placeholder="Yamada" required>
   <p>・First Name</p>
   <input type="text" name="First Name" placeholder="Taro" required>
+  </div>
 
-  <div>
-    <label for="i_image">・参考画像の添付</label>
+
+  <div class="form">
+    <label for="i_image">・プログラム写真の添付</label>
     <input id="i_image" type="file" name="sample_pic">
   </div>
   <div>
@@ -39,84 +47,90 @@
   <input type="radio" name="性別" value="M">男
   <input type="radio" name="性別" value="F">女 -->
 
-
+  <div class="form">
   <p>・学校名</p>
-  <input type="radio" name="学校名" value="SPN">SPN
-  <input type="radio" name="学校名" value="USA">USA
-  <input type="radio" name="学校名" value="ITA">ITA
-  <input type="radio" name="学校名" value="CZE">CZE
-  <input type="radio" name="学校名" value="FIN">FIN
-  <input type="radio" name="学校名" value="HUN">HUN
-  <input type="radio" name="学校名" value="POL">POL
-  <input type="radio" name="学校名" value="UK">UK
-  <input type="radio" name="学校名" value="CZE">CZE
-  <input type="radio" name="学校名" value="FRA">FRA
-  <input type="radio" name="学校名" value="GER">GER
-  <input type="radio" name="学校名" value="NOR">NOR
-  <input type="radio" name="学校名" value="AUS">AUS
-  <input type="radio" name="学校名" value="RUS">RUS
-  <input type="radio" name="学校名" value="国立">国立
-  <input type="radio" name="学校名" value="洗足">洗足
-  <input type="radio" name="学校名" value="相愛">相愛
-  <input type="radio" name="学校名" value="桐朋">桐朋
-  <input type="radio" name="学校名" value="大音">大音
-  <input type="radio" name="学校名" value="東音">東音
-  <input type="radio" name="学校名" value="東芸">東芸
-  <input type="radio" name="学校名" value="愛知">愛知
-  <input type="radio" name="学校名" value="エリザ">エリザ
-  <input type="radio" name="学校名" value="くらし">くらし
-  <input type="radio" name="学校名" value="武蔵野">武蔵野
-  <input type="radio" name="学校名" value="大芸">大芸
-  <input type="radio" name="学校名" value="京芸">京芸
-  <input type="radio" name="学校名" value="同志社">同志社
+  <p>
+  <select name="学校名">
+  <option value="国立音楽大学">国立音楽大学</option>
+  <option value="洗足学園音楽大学">洗足学園音楽大学</option>
+  <option value="相愛大学">相愛大学</option>
+  <option value="桐朋学園大学">桐朋学園大学</option>
+  <option value="大阪音楽大学">大阪音楽大学</option>
+  <option value="東京音楽大学">東京音楽大学</option>
+  <option value="東京芸術大学">東京芸術大学</option>
+  <option value="東京芸術大学">東京芸術大学</option>
+  <option value="愛知県立芸術大学">愛知県立芸術大学</option>
+  <option value="エリザベト音楽大学">エリザベト音楽大学</option>
+  <option value="くらしき作陽大学">くらしき作陽大学</option>
+  <option value="武蔵野音楽大学">武蔵野音楽大学</option>
+  <option value="大阪芸術大学">大阪芸術大学</option>
+  <option value="京都市芸術大学">京都市芸術大学</option>
+  <option value="同志社女子大学">同志社女子大学</option>
+  </select>
+  </p>
+  </div>
 
+ 
+  <div class="form">
   <p>・楽器名</p>
-  <input type="radio" name="楽器名" value="ヴァイオリン">ヴァイオリン
-  <input type="radio" name="楽器名" value="ヴィオラ">ヴィオラ
-  <input type="radio" name="楽器名" value="チェロ">チェロ
-  <input type="radio" name="楽器名" value="コントラバス">コントラバス
-  <input type="radio" name="楽器名" value="フルート">フルート
-  <input type="radio" name="楽器名" value="オーボエ">オーボエ
-  <input type="radio" name="楽器名" value="クラリネット">クラリネット
-  <input type="radio" name="楽器名" value="ファゴット">ファゴット
-  <input type="radio" name="楽器名" value="サックス">サックス
-  <input type="radio" name="楽器名" value="ホルン">ホルン
-  <input type="radio" name="楽器名" value="トランペット">トランペット
-  <input type="radio" name="楽器名" value="トロンボーン">トロンボーン
-  <input type="radio" name="楽器名" value="チューバ">チューバ
-  <input type="radio" name="楽器名" value="ティンパニー">ティンパニー
-  <input type="radio" name="楽器名" value="パーカッション">パーカッション
-  <input type="radio" name="楽器名" value="ハープ">ハープ
-  <input type="radio" name="楽器名" value="ピアノ">ピアノ
-  <input type="radio" name="楽器名" value="ソプラノ（ソロ）">ソプラノ（ソロ）
-  <input type="radio" name="楽器名" value="メゾソプラノ（ソロ）">メゾソプラノ（ソロ）
-  <input type="radio" name="楽器名" value="アルト">アルト
-  <input type="radio" name="楽器名" value="テノール（ソロ）">テノール（ソロ）
-  <input type="radio" name="楽器名" value="バリトン（ソロ）">バリトン（ソロ）
-  <input type="radio" name="楽器名" value="作曲">作曲
-  <input type="radio" name="楽器名" value="合唱（ソプラノ）">合唱（ソプラノ）
-  <input type="radio" name="楽器名" value="合唱（アルト）">合唱（アルト）
-  <input type="radio" name="楽器名" value="合唱（テノール）">合唱（テノール）
-  <input type="radio" name="楽器名" value="合唱（バス）">合唱（バス）
-  <input type="radio" name="楽器名" value="合唱（ピアノ）">合唱（ピアノ）
-  <input type="radio" name="楽器名" value="指揮者">指揮者
+  <p>
+  <select name="楽器名">
+  <option value="ヴァイオリン">ヴァイオリン</option>
+  <option value="ヴィオラ">ヴィオラ</option>
+  <option value="チェロ">チェロ</option>
+  <option value="コントラバス">コントラバス</option>
+  <option value="フルート">フルート</option>
+  <option value="オーボエ">オーボエ</option>
+  <option value="クラリネット">クラリネット</option>
+  <option value="ファゴット">ファゴット</option>
+  <option value="サックス">サックス</option>
+  <option value="ホルン">ホルン</option>
+  <option value="トランペット">トランペット</option>
+  <option value="トロンボーン">トロンボーン</option>
+  <option value="チューバ">チューバ</option>
+  <option value="ティンパニー">ティンパニー</option>
+  <option value="パーカッション">パーカッション</option>
+  <option value="ハープ">ハープ</option>
+  <option value="ピアノ">ピアノ</option>
+  <option value="ソプラノ（ソロ）">ソプラノ（ソロ）</option>
+  <option value="メゾソプラノ（ソロ）">メゾソプラノ（ソロ）</option>
+  <option value="アルト">アルト</option>
+  <option value="テノール（ソロ）">テノール（ソロ）</option>
+  <option value="バリトン（ソロ）">バリトン（ソロ）</option>
+  <option value="作曲">作曲</option>
+  <option value="合唱（ソプラノ）">合唱（ソプラノ）</option>
+  <option value="合唱（アルト）">合唱（アルト）</option>
+  <option value="合唱（テノール）">合唱（テノール）</option>
+  <option value="合唱（バス）">合唱（バス）</option>
+  <option value="合唱（ピアノ）">合唱（ピアノ）</option>
+  <option value="指揮者">指揮者</option>
+  <option value="指揮者">指揮者</option>
+  </select>
+  </p>
+  </div>
 
 
-
-
-
+  <div class="form">
   <p>・郵便番号　例:000-0000</p>
   <input type="text" name="郵便番号">
 
   <p>・自宅住所</p>
   <input type="text" name="自宅住所">
+  </div>
 
-  <p>・電話番号　例:000-0000-0000</p>
+
+  <div class="form">
+  <p>・自宅電話番号　例:00-0000-0000</p>
+  <input type="text" name="自宅電話" placeholder="00-0000-0000">
+
+  <p>・携帯電話番号(※必須)　例:000-0000-0000</p>
   <input type="text" name="電話番号" placeholder="000-0000-0000" required>
+  </div>
 
+  <div class="form">
   <p>・e-mail (期間中確認が可能なもの)　</p>
   <input type="text" name="e-mail" placeholder="000000000@gmail.com" required>
-
+  </div>
   <!--
   <p>銀行名</p>
   <input type="text" name="銀行名">
@@ -134,7 +148,7 @@
   <p>名義(カタカナ)</p>
   <input type="text" name="名義(カタカナ)">
 -->
-
+  <div class="form">
 　<p>以下、質問にお答えください</p>
 
   
@@ -145,9 +159,9 @@
   <p>・フェスティバル開催時(2021年5月)に在学していますか？</p>
   <input type="radio" name="Q2" value="はい">はい
   <input type="radio" name="Q2" value="いいえ">いいえ
-
+  </div>
   <p>
-    <button type="submit">送信</button>
+    <button type="submit" style="width:10%;padding:10px;font-size:20px;">送信</button>
   </p>
 
 
